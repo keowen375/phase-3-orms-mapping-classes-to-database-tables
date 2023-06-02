@@ -5,3 +5,7 @@ require_relative '../config/environment'
 
 binding.pry
 "pls"
+
+
+
+DB[:conn].execute("PRAGMA table_info(songs)")
